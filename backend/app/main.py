@@ -18,7 +18,7 @@ app = FastAPI(title="Typeform Clone API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # tighten in production to your deployed frontend URL
+    allow_origins=["https://typeform-rho-cyan.vercel.app"],  # tighten in production to your deployed frontend URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
